@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+   <th:block th:replace="fragments/head.html :: static_head"></th:block>
+</head>
+
+<body class="bg-dark">
+<th:block th:replace="fragments/menu.html :: classic_menu"></th:block>
+<main>
+   <section>
+      <div class="container text-white">
+         <div class="row align-items-center">
+            <div class="col-12 text-center">
+               <div th:each="npc : ${npcSet}">
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+</main>
+<th:block th:replace="fragments/script.html :: static_script"></th:block>
+
+</body>
+
+</html>

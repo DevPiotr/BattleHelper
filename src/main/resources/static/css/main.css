@@ -1,0 +1,8 @@
+.bg-battleHelper
+{
+    background: #ff4238 !important;
+}
+
+.welcome-section .container > .row {
+    min-height: 100vh;
+}
