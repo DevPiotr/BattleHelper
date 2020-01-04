@@ -12,9 +12,9 @@
       <div class="container text-white">
          <div class="row align-items-center">
             <div class="col-12 text-center">
-               <div th:each="npc : ${npcSet}">
-                  
-               </div>
+               <th:block th:each="npc : ${npcSet}">
+                  <div th:text="${npc.getName()}"></div>
+               </th:block>
             </div>
          </div>
       </div>

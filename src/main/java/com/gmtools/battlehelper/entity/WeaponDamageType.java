@@ -19,6 +19,10 @@ public class WeaponDamageType {
     @Column(name = "name")
     private String name;
 
+    @NotNull
+    @Column(name = "long_name")
+    private String longName;
+
     @OneToMany(
             mappedBy = "weaponDamageType",
             cascade = CascadeType.ALL,

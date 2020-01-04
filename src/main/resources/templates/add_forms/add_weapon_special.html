@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+   <th:block th:replace="fragments/head.html :: static_head"></th:block>
+</head>
+
+<body class="bg-dark">
+<th:block th:replace="fragments/menu.html :: classic_menu"></th:block>
+<main>
+   <section class="welcome-section">
+      <div class="container text-white">
+         <div class="row align-items-center">
+            <div th:if="${successText}" class="col-12 text-black bg-success" th:text="${successText}"></div>
+            <form action="/weapon/special/add" class="col-12" method="post">
+               <h2>Uwagi do broni</h2>
+               Nazwa <input class="form-control" type="text" th:field="${weaponSpecial.name}">
+               Opis <textarea class="form-control" cols="30" rows="30" th:field="${weaponSpecial.description}"></textarea>
+               <button type="submit" class="btn btn-primary">Zapisz</button>
+            </form>
+         </div>
+      </div>
+   </section>
+</main>
+<th:block th:replace="fragments/script.html :: static_script"></th:block>
+
+</body>
+
+</html>

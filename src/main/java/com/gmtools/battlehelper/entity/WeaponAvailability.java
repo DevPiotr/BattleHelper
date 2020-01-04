@@ -19,6 +19,14 @@ public class WeaponAvailability {
     @Column(name = "name")
     private String name;
 
+    @NotNull
+    @Column(name = "long_name")
+    private  String longName;
+
+    @NotNull
+    @Column(name = "modifier")
+    private String modifier;
+
     @OneToMany(
             mappedBy = "weaponAvailability",
             cascade = CascadeType.ALL,

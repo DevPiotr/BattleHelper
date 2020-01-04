@@ -4,7 +4,7 @@
 <th:block th:fragment="classic_menu">
     <header>
         <nav class="navbar bg-battleHelper navbar-light navbar-expand-lg">
-            <a class="navbar-brand" href="/"><img src="images/icon.png" class="d-inline-block mr-1" width="40" height="40" alt="icon">Pomocnik mistrza gry</a>
+            <a class="navbar-brand" href="/"><img src="/images/icon.png" class="d-inline-block mr-1" width="40" height="40" alt="icon">Pomocnik mistrza gry</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -18,7 +18,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" href="#" aria-expanded="false" id="npc_submenu" aria-haspopup="true"> NPC </a>
                         <div class="dropdown-menu" aria-labelledby="npc_submenu">
-                            <a class="dropdown-item disabled" href="#"> Podgląd NPC </a>
+                            <a class="dropdown-item" href="/npc/show"> Podgląd NPC </a>
                             <a class="dropdown-item disabled" href="#"> Dodaj NPC </a>
                         </div>
                     </li>
@@ -28,6 +28,13 @@
                         <div class="dropdown-menu" aria-labelledby="weapon_submenu">
                             <a class="dropdown-item disabled" href="#"> Podgląd broni </a>
                             <a class="dropdown-item disabled" href="#"> Dodaj broń </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" href="#" aria-expanded="false" id="database_menegament_submenu" aria-haspopup="true">Zarządzaj bazą danych</a>
+                        <div class="dropdown-menu" aria-labelledby="database_menegament_submenu">
+                            <a class="dropdown-item" href="/weapon/special/add">Dodaj uwagę do broni</a>
                         </div>
                     </li>
 
